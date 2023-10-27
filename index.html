@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumpframe</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="/images/logomark dot.svg" alt="" class="logo1">
+      
+      <ul class="navmenu">
+        <img src="/images/logomark dot.svg" alt="" class="logo">
+        
+        <li class="navitems"><a href="#" class="navlink">Home</a></li>
+        <li class="navitems"><a href="#" class="navlink">About</a></li>
+        <li class="navitems"><a href="#" class="navlink">Careers</a></li>
+        <li class="navitems"><a href="#" class="navlink"><button class="btnnav">Contact us</button></a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="herosection">
+      <h1>Web Magic <br>in Every <span>Pixel</span></h1>
+      <h2>Empowering Your Brand's Online Voyage <br>with Jumpframe!"</h2>
+      <a href=""><button class="btnnav">Contact us</button></a>
+    </div>
+  </header>
+  <div class="heading2">
+    <h1 class="heading2c">What we do</h1>
+  </div>
+  <div class="wwdc">
+    <div class="cards ">
+      <div class="content">
+        <div><h1 class="card1h">Branding</h1>
+        </div>
+        <div><p class="card1p">Develop a strong, recognizable fashion
+          brand identity.</p>
+        </div>
+        <div class="vc"><button class="btnvector"><img src="/images/Vector.svg" alt=""></button><p class="last1p">About Branding</p></div>
+      </div>
+    </div>
+    <div class="cards ">
+      <div class="content">
+        <div><h1 class="card1h">Identity</h1>
+        </div>
+        <div><p class="card1p">Develop a strong, recognizable fashion
+          brand identity.</p>
+        </div>
+        <div class="vc"><button class="btnvector"><img src="/images/Vector.svg" alt=""></button><p class="last1p">About Identity</p></div>
+      </div>
+    </div>
+    <div class="cards ">
+      <div class="content">
+        <div><h1 class="card1h">Marketing</h1>
+        </div>
+        <div><p class="card1p">Develop a strong, recognizable fashion
+          brand identity.</p>
+        </div>
+        <div class="vc"><button class="btnvector"><img src="/images/Vector.svg" alt=""></button><p class="last1p">About Marketing</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="sitcont">
+    <div class="sitflex">
+      <div>
+        <h1 class="hsit">Sit back and <span class="relax">relax</span></h1>
+      </div>
+      <div>
+        <p class="psit">"We Work Hard, While You Watch Your <br>Business Grow!"</p>
+      </div>
+    </div>
+    <div class="imageg">
+      <img src="/images/graph.png" alt="" class="imggraph">
+    </div>
+  </div>
+  <div class="boybac">
+    <div class="boycont">
+      <img src="/images/aitechnologies_A_handsome_black_student_on_his_laptop_working_o_83272e1d-b19e-45dc-bc06-88586209950e_clipdrop-background-removal 1.png" alt="" class="imageboy">
+    </div>
+  </div>
+  <div class="recgrid">
+    <div class="rec"><img src="/images/the thirty image1.png" alt="" class="thirt"></div>
+  </div>
+  <div class="recgrid">
+    <div class="rec"><img src="/images/the thirty image.png" alt="" class="thirt"></div>
+  </div>
+  <div class="backd">
+    <div class="left">
+      <div>
+        <h1 class="h1t">what they think :)
+        </h1>
+      </div>
+      <div class="boxleft">
+        <div>
+          <p class="leftpcont">“Amet minim mollit non deserunt ullamco est sit
+          aliqua dolor do amet sint. Velit officia
+          consequat duis enim.”
+          </p>
+        </div>
+        <div class="yellowflex">
+          <img src="/images/man yellow.png" alt="" class="yellowman">
+          <p class="sarah">Sarah Johnson <br><span class="market">Marketing Manager</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="boxleft">
+        <div>
+          <p class="leftpcont">“Amet minim mollit non deserunt ullamco est sit
+          aliqua dolor do amet sint. Velit officia
+          consequat duis enim.”
+          </p>
+        </div>
+        <div class="yellowflex">
+          <img src="/images/girl red.png" alt="" class="yellowman">
+          <p class="sarah">Sarah Johnson <br><span class="market">Marketing Manager</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxleft">
+        <div>
+          <p class="leftpcont">“Amet minim mollit non deserunt ullamco est sit
+          aliqua dolor do amet sint. Velit officia
+          consequat duis enim.”
+          </p>
+        </div>
+        <div class="yellowflex">
+          <img src="/images/man blue.png" alt="" class="yellowman">
+          <p class="sarah">Sarah Johnson <br><span class="market">Marketing Manager</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+  
+
+  
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navmenu = document.querySelector(".navmenu");
+    const herosection = document.querySelector(".hero-section");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active")
+      navmenu.classList.toggle("active")
+      
+      
+    })
+
+    document.querySelectorAll(".navlink").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navmenu.classList.remove("active");
+      
+    }))
+  </script>
+</body>
+</html>
